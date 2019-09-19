@@ -79,10 +79,9 @@ body {
   background: white;
   box-shadow: 0 0 16px rgba(0,0,0,0.1);
   border-radius: 4px;
-  width: 200px;
+  /*width: 200px;*/
   text-align: center;
   padding: 24px;
-  margin: 8px;
   flex-grow: 1;
 }
 
@@ -109,11 +108,20 @@ body {
 }
 
 .cards {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-bottom: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  margin-bottom: 24px;
 }
+
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 @media (min-width: 500px) {
   .container {
