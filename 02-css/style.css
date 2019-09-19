@@ -1,0 +1,33 @@
+/* #1A48E3 */
+/* #404042 */
+
+body {
+  font-family: Overpass;
+}
+
+h1, h2, h3 {
+  color: #404042;
+  font-family: Chivo;
+}
+
+p {
+  color: #404042;
+  opacity: .7;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+a {
+  color: #1A48E3;
+  font-weight: bold;
+  text-decoration: none;
+  transition: .3s;
+}
+
+a:hover {
+  color: #CE2FAE;
+}
